@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Barber Shop</title>
+  </head>
+  <body>
+    <header>
+      <h1>Visit</h1>
+    </header>
+    <small>At this page you can sign up for visit our Barber Shop</small>
+    <br>
+    <br>
+    <p> <%= @message %> </p>
+    <form action="/visit" method="post" role="form">
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Your name:</label>
+        <input type="text" name="username" class="form-control" id="exampleInputEmail1" placeholder="Input your name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Your phone:</label>
+        <input type="text" name="phone" class="form-control" id="exampleInputEmail1" placeholder="Input your phone">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Date and time:</label>
+        <input type="text" name="date_time" class="form-control" id="exampleInputEmail1" placeholder="Input date and time of visit">
+      </div>
+
+      <button type="submit" name="send" class="btn btn-primary">Send info</button>
+    </form>
+
+    <h2>Choose your master</h2>
+
+    <select class="custom-select custom-select-lg mb-3">
+      <option selected>There is the bests</option>
+      <option value="1">Walter White</option>
+      <option value="2">Jessie Pincman</option>
+      <option value="3">Gus Fring</option>
+    </select>
+
+    <small> <%= @message %> </small>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
